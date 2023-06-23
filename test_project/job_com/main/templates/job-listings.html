@@ -1,0 +1,361 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block head %}
+<title>Job listings</title>
+<link rel="stylesheet" href="{% static 'job-listings.css' %}" media="screen" />
+<meta property="og:title" content="Candidate" />
+{% endblock %}
+{% block filename %}
+"job-listings.html"
+{% endblock %}
+{% block title %}
+"Job listings"
+{% endblock %}
+{% block content %}
+<section class="u-align-center u-clearfix u-grey-10 u-section-1" id="sec-ba6c">
+  <div class="u-clearfix u-sheet u-sheet-1">
+    <h1 class="u-align-center u-text u-text-default u-text-1">Job listings</h1>
+
+    <div class="u-expanded-width u-layout-horizontal u-products u-products-1">
+      <div class="u-repeater u-repeater-1">
+        <div
+          class="u-align-left u-container-style u-products-item u-repeater-item u-white u-repeater-item-1"
+        >
+          <div
+            class="u-container-layout u-similar-container u-valign-top u-container-layout-1"
+          >
+            <img
+              alt=""
+              class="u-expanded-width u-image u-image-default u-product-control u-image-1"
+              src="{% static 'images/nikelogo.jpeg' %}"
+              data-image-width="1600"
+              data-image-height="1199"
+            />
+            <h4 class="u-product-control u-text u-text-2">
+              <a class="u-product-title-link" href="#"></a>
+            </h4>
+
+            <div class="u-product-control u-product-desc u-text u-text-3">
+              Sample small text. Lorem ipsum dolor sit amet.
+            </div>
+
+            <div
+              class="u-container-style u-custom-color-4 u-expanded-width u-group u-group-1"
+            >
+              <div class="u-container-layout u-container-layout-2">
+                <p class="u-text u-text-default u-text-4">HIGH MATCH</p>
+              </div>
+            </div>
+
+            <div class="u-product-control u-product-price u-product-price-1">
+              <div class="u-price-wrapper u-spacing-10">
+                <div class="u-hide-price u-old-price"></div>
+
+                <div
+                  class="u-price u-text-palette-1-base"
+                  style="font-size: 1.5rem; font-weight: 700"
+                ></div>
+              </div>
+            </div>
+
+            <a
+              href=""
+              class="u-btn u-btn-rectangle u-button-style u-product-control u-btn-1"
+            ></a>
+          </div>
+        </div>
+
+        <div
+          class="u-align-left u-container-style u-products-item u-repeater-item u-white u-repeater-item-2"
+        >
+          <div
+            class="u-container-layout u-similar-container u-valign-top u-container-layout-3"
+          >
+            <img
+              alt=""
+              class="u-expanded-width u-image u-image-default u-product-control u-image-2"
+              src="{% static 'images/microsoftlogo.png' %}"
+              data-image-width="225"
+              data-image-height="225"
+            />
+            <h4 class="u-product-control u-text u-text-5">
+              <a class="u-product-title-link" href="#"></a>
+            </h4>
+
+            <div class="u-product-control u-product-desc u-text u-text-6">
+              Sample small text. Lorem ipsum dolor sit amet.
+            </div>
+
+            <div
+              class="u-container-style u-custom-color-4 u-expanded-width u-group u-group-2"
+            >
+              <div class="u-container-layout u-container-layout-4">
+                <p class="u-text u-text-default u-text-7">HIGH MATCH</p>
+              </div>
+            </div>
+
+            <div class="u-product-control u-product-price u-product-price-2">
+              <div class="u-price-wrapper u-spacing-10">
+                <div class="u-hide-price u-old-price"></div>
+
+                <div
+                  class="u-price u-text-palette-1-base"
+                  style="font-size: 1.5rem; font-weight: 700"
+                ></div>
+              </div>
+            </div>
+
+            <a
+              href=""
+              class="u-btn u-btn-rectangle u-button-style u-product-control u-btn-2"
+            ></a>
+          </div>
+        </div>
+
+        <div
+          class="u-align-left u-container-style u-products-item u-repeater-item u-white u-repeater-item-3"
+        >
+          <div
+            class="u-container-layout u-similar-container u-valign-top u-container-layout-5"
+          >
+            <img
+              alt=""
+              class="u-expanded-width u-image u-image-default u-product-control u-image-3"
+              src="data:image/svg+xml;base64,DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9Im1hbiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIyNTZweCIgaGVpZ2h0PSIyNTZweCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI1NiAyNTYiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHJlY3QgZmlsbD0iI0M2RDhFMSIgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiLz4NCjxwYXRoIGZpbGw9IiM3Rjk2QTYiIGQ9Ik0yMDguNiwxMzFjMC42LDAuMiwxLjIsMC4zLDEuOSwwLjNjMi41LDAsNC43LTEuNCw1LjYtMy42YzEtMi44LTAuNi01LjgtMy43LTYuN2wtMjYuMi03LjhsMTYuNy0xNS4xDQoJYzIuMy0yLjEsMi4zLTUuNCwwLTcuNXMtNi0yLjEtOC4zLDBsLTEzLjcsMTIuM0MxNzkuNyw4My41LDE2Miw2OCwxNDAuMSw2OGgtMjQuMmMtMjIuNiwwLTQxLDE2LjYtNDEsMzYuOXYxNS44aDk5LjRMMjA4LjYsMTMxeg0KCSBNMjMwLDE2NC41bC0zNi45LTMzLjJINzAuM2wtMzYuOSwzMy4yYy0xLjcsMS41LTIuMiwzLjgtMS4zLDUuN2MwLjksMiwzLDMuMyw1LjQsMy4zaDM2LjhjMTMuOCwwLDI3LjIsMi4zLDM5LjgsNi45DQoJYzE0LjEsNS4xLDI5LjgsNy42LDQ0LjgsNy42YzEyLjcsMCwyNS41LTEuOCwzNy43LTUuNWwzMS4xLTkuM2MxLjktMC42LDMuNC0yLDMuOS0zLjhDMjMyLDE2Ny42LDIzMS40LDE2NS44LDIzMCwxNjQuNXoiLz4NCjwvc3ZnPg0K"
+            />
+            <h4 class="u-product-control u-text u-text-8">
+              <a class="u-product-title-link" href="#"></a>
+            </h4>
+
+            <div class="u-product-control u-product-desc u-text u-text-9">
+              Sample small text. Lorem ipsum dolor sit amet.
+            </div>
+
+            <div
+              class="u-container-style u-custom-color-4 u-expanded-width u-group u-group-3"
+            >
+              <div class="u-container-layout u-container-layout-6">
+                <p class="u-text u-text-default u-text-10">HIGH MATCH</p>
+              </div>
+            </div>
+
+            <div class="u-product-control u-product-price u-product-price-3">
+              <div class="u-price-wrapper u-spacing-10">
+                <div class="u-hide-price u-old-price"></div>
+
+                <div
+                  class="u-price u-text-palette-1-base"
+                  style="font-size: 1.5rem; font-weight: 700"
+                ></div>
+              </div>
+            </div>
+
+            <a
+              href=""
+              class="u-btn u-btn-rectangle u-button-style u-product-control u-btn-3"
+            ></a>
+          </div>
+        </div>
+
+        <div
+          class="u-align-left u-container-style u-products-item u-repeater-item u-white u-repeater-item-4"
+        >
+          <div
+            class="u-container-layout u-similar-container u-valign-top u-container-layout-7"
+          >
+            <img
+              alt=""
+              class="u-expanded-width u-image u-image-default u-product-control u-image-4"
+              src="data:image/svg+xml;base64,DQoNCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0ibWFuIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjI1NnB4IiBoZWlnaHQ9IjI1NnB4IiB2aWV3Qm94PSIwIDAgMjU2IDI1NiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjU2IDI1NiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cmVjdCBmaWxsPSIjQzZEOEUxIiB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIvPg0KPGc+DQoJPHBhdGggZmlsbD0iIzdGOTZBNiIgZD0iTTIyNi4xLDEwMGMtMS4yLTEuMi0yLjktMS45LTQuNy0xLjljLTIuMSwwLTQuMSwwLjktNS43LDIuNWwtMjUuMSwyNS42Yy0wLjIsMC4yLTAuNiwwLjUtMC45LDAuNQ0KCQljLTAuMiwwLTAuNC0wLjEtMC40LTAuMWwtMi44LTIuOGMtMC40LTAuNC0wLjctMSwwLTEuN0wyMTgsOTBjMy0zLjEsMy4yLTcuOCwwLjUtMTAuNmMtMS4yLTEuMi0yLjktMS45LTQuNy0xLjkNCgkJYy0yLjEsMC00LjEsMC45LTUuNywyLjVsLTMxLjQsMzJjLTAuNiwwLjYtMC45LDAuNy0xLDAuN2wtMy42LTMuN2MtMC4xLTAuMiwwLTAuNiwwLjUtMS4xbDM3LTM3LjhjMy0zLjEsMy4yLTcuOCwwLjUtMTAuNg0KCQljLTEuMi0xLjItMi45LTEuOS00LjctMS45Yy0yLjEsMC00LjEsMC45LTUuNywyLjVsLTM3LDM3LjhjLTAuMywwLjQtMC43LDAuNS0wLjksMC41Yy0wLjEsMC0wLjIsMC0wLjItMC4xbC0zLjItMy4zDQoJCWMtMC4xLTAuMy0wLjMtMC44LDAuMy0xLjRsMzIuNi0zMy4zYzMtMy4xLDMuMi03LjgsMC41LTEwLjZjLTEuMi0xLjItMi45LTEuOS00LjctMS45Yy0yLjEsMC00LjEsMC45LTUuNywyLjVMMTQ2LDg2LjlsMC44LTEwLjMNCgkJYzAuMi0yLjgtMC40LTUuMy0xLjctNy4ybDAsMGMtMS41LTIuNC00LjEtMy43LTcuMy0zLjdsLTAuMSwwYy0yLjgsMC02LjksMi4zLTcuNCw2LjZjLTAuMSwwLjktMC4yLDEuOS0wLjQsMw0KCQljLTEuNiwxMy43LTQuMiwzNi43LTEwLjgsNDYuMmMtNC45LDcuMS0yNS45LDIyLjEtMjYuMSwyMi4zbC0wLjEsMC4xYy0wLjQsMC40LTAuNywwLjktMC43LDEuNGMwLDAuNiwwLjIsMS4xLDAuNiwxLjVsNDcuMiw0OC41DQoJCWMwLjQsMC40LDAuOSwwLjYsMS40LDAuNmwwLjEsMGMwLjUsMCwxLjEtMC4zLDEuNC0wLjdsMC4xLTAuMWMwLjEtMC4yLDE0LjMtMjAuOCwyMC4xLTI2LjljMi42LTIuNyw1LjctNC40LDktNi4yDQoJCWMzLjMtMS44LDYuOC0zLjYsOS44LTYuN2w0My43LTQ0LjZDMjI4LjYsMTA3LjUsMjI4LjgsMTAyLjgsMjI2LjEsMTAweiIvPg0KCTxwYXRoIGZpbGw9IiM3Rjk2QTYiIGQ9Ik0xMjEuNiwxODMuNGwtMzMtMzMuOWMtMS4yLTEuMi0xLjgtMi45LTEuNy00LjZjMC4xLTEuNywwLjktMy40LDIuMi00LjVsMC4zLTAuMw0KCQljNS43LTQuMSwyMS40LTE1LjksMjUuMS0yMS4zYzQtNS44LDUuOS0xNC40LDcuNS0yNS41YzAuNC0xLjgsMC40LTMtMC4yLTMuN2MtMC4zLTAuNC0wLjgtMC42LTEuMy0wLjZjLTAuMiwwLTAuNCwwLTAuNiwwLjENCgkJYy0wLjcsMC4zLTEuMiwwLjYtMS40LDAuOGwwLDBjLTEuOSwxLjItMy41LDMuMy00LjMsNmwtMy4yLDkuOEw5MS45LDU4LjFjLTEuMi0zLTQtNS4xLTYuOS01LjFjLTAuOCwwLTEuNiwwLjItMi40LDAuNQ0KCQljLTEuNywwLjctMywyLjItMy43LDQuMWMtMC42LDEuOS0wLjYsMy45LDAuMiw1LjlMOTYuNSwxMDdjMC4zLDAuNy0wLjEsMS4yLTAuMiwxLjRsLTQuMiwxLjdjMCwwLDAsMC0wLjEsMA0KCQljLTAuNCwwLTAuNy0wLjYtMC44LTAuOUw3MS40LDU5LjhjLTEuMi0zLTQtNS4xLTYuOS01LjFjLTAuOCwwLTEuNiwwLjItMi40LDAuNWMtMS43LDAuNy0zLDIuMi0zLjcsNC4xYy0wLjYsMS45LTAuNiwzLjksMC4yLDUuOQ0KCQlsMTkuOCw0OS40YzAuMywwLjcsMC4yLDEuMSwwLDEuM2wtNC43LDJsMCwwYy0wLjEtMC4xLTAuNC0wLjMtMC42LTFMNTYuMyw3NC45Yy0xLjItMy00LTUuMS02LjktNS4xYy0wLjgsMC0xLjYsMC4yLTIuNCwwLjUNCgkJYy0zLjUsMS41LTUuMSw1LjktMy41LDkuOWwxNi44LDQxLjljMC40LDAuOS0wLjEsMS4zLTAuNiwxLjVsLTMuNiwxLjVjMCwwLTAuMSwwLTAuMiwwYzAsMCwwLDAsMCwwYy0wLjEsMC0wLjUsMC0wLjktMC45DQoJCUw0MS41LDkwLjhjLTEuMi0zLTQtNS4xLTYuOS01LjFjLTAuOCwwLTEuNiwwLjItMi40LDAuNWMtMy41LDEuNS01LjEsNS45LTMuNSw5LjlMNTIsMTU0LjVjMS42LDQsNC4xLDcsNi41LDEwDQoJCWMyLjQsMi45LDQuNiw1LjcsNiw5LjJjMy4xLDcuOSw4LjMsMzIuNSw4LjMsMzIuN2wwLDAuMWMwLjIsMC41LDAuNSwxLDEsMS4yYzAuMywwLjEsMC41LDAuMiwwLjgsMC4yYzAuMywwLDAuNS0wLjEsMC43LTAuMg0KCQljMC4zLTAuMSwzNC40LTE0LjcsNDUuOC0xOS4yYzEuNC0wLjYsMS44LTEuNCwxLjktMi4xQzEyMy40LDE4NSwxMjIsMTgzLjcsMTIxLjYsMTgzLjR6Ii8+DQo8L2c+DQo8L3N2Zz4NCg=="
+            />
+            <h4 class="u-product-control u-text u-text-11">
+              <a class="u-product-title-link" href="#"></a>
+            </h4>
+
+            <div class="u-product-control u-product-desc u-text u-text-12">
+              <p>
+                Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit nullam nunc justo sagittis suscipit ultrices.
+              </p>
+            </div>
+
+            <div
+              class="u-container-style u-custom-color-4 u-expanded-width u-group u-group-4"
+            >
+              <div class="u-container-layout u-container-layout-8">
+                <p class="u-text u-text-default u-text-13">
+                  Sample text. Click to select the Text Element.
+                </p>
+              </div>
+            </div>
+
+            <div class="u-product-control u-product-price u-product-price-4">
+              <div class="u-price-wrapper u-spacing-10">
+                <div class="u-hide-price u-old-price"></div>
+
+                <div
+                  class="u-price u-text-palette-1-base"
+                  style="font-size: 1.5rem; font-weight: 700"
+                ></div>
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="u-btn u-btn-rectangle u-button-style u-product-control u-btn-4"
+            ></a>
+          </div>
+        </div>
+
+        <div
+          class="u-align-left u-container-style u-products-item u-repeater-item u-white u-repeater-item-5"
+        >
+          <div
+            class="u-container-layout u-similar-container u-valign-top u-container-layout-9"
+          >
+            <img
+              alt=""
+              class="u-expanded-width u-image u-image-default u-product-control u-image-5"
+              src="data:image/svg+xml;base64,DQoNCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0ibWFuIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjI1NnB4IiBoZWlnaHQ9IjI1NnB4IiB2aWV3Qm94PSIwIDAgMjU2IDI1NiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjU2IDI1NiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cmVjdCBmaWxsPSIjQzZEOEUxIiB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIvPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGZpbGw9IiM3Rjk2QTYiIGQ9Ik01MS44LDEyOC40YzMuNC0xMS41LDkuNC0yMS45LDE3LjUtMjkuOWwxMS40LTExLjN2LTQuN2MwLTIuOSwyLjEtNS4zLDQuNy01LjNjMi42LDAsNC43LDIuMyw0LjcsNS4zdjQuNw0KCQkJbDExLjQsMTEuM2M4LjIsOCwxNC4yLDE4LjQsMTcuNSwyOS45bDMuNC0yNy44YzEuNC0xMi4xLTEuOC0yNC4yLTguOS0zMy40Yy03LjEtOS4yLTE3LjQtMTQuNC0yOC4yLTE0LjRTNjQuNSw1OCw1Ny40LDY3LjINCgkJCWMtNy4xLDkuMi0xMC41LDIxLjMtOSwzMy40TDUxLjgsMTI4LjR6Ii8+DQoJCTxwYXRoIGZpbGw9IiM3Rjk2QTYiIGQ9Ik0xMTAuNSwxMzIuOWMtMi43LTEwLjMtNy45LTE5LjQtMTUuMS0yNi41bC05LjktOS44bC05LjksOS44Yy03LjIsNy0xMi40LDE2LjItMTUuMSwyNi41bC01LjgsMjEuOA0KCQkJYzAuNywxMCwxLjEsMjAsMS4xLDI5LjljMCwxOC40LDEzLjMsMzMuNCwyOS43LDMzLjRzMjkuNy0xNC45LDI5LjctMzMuNGMwLTEwLDAuNC0yMCwxLjEtMjkuOUwxMTAuNSwxMzIuOXoiLz4NCgk8L2c+DQoJPGc+DQoJCTxwYXRoIGZpbGw9IiM3Rjk2QTYiIGQ9Ik0yMDQuNCwxMjcuNmMtMy40LDExLjUtOS40LDIxLjktMTcuNSwyOS45bC0xMS40LDExLjN2NC43YzAsMi45LTIuMSw1LjMtNC43LDUuM2MtMi42LDAtNC43LTIuMy00LjctNS4zDQoJCQl2LTQuN2wtMTEuNC0xMS4zYy04LjItOC0xNC4yLTE4LjQtMTcuNS0yOS45bC0zLjQsMjcuOGMtMS40LDEyLjEsMS44LDI0LjIsOC45LDMzLjRjNy4xLDkuMiwxNy40LDE0LjQsMjguMiwxNC40DQoJCQlzMjEuMS01LjIsMjguMi0xNC40YzcuMS05LjIsMTAuMy0yMS4zLDguOS0zMy40TDIwNC40LDEyNy42eiIvPg0KCQk8cGF0aCBmaWxsPSIjN0Y5NkE2IiBkPSJNMTQ1LjcsMTIzLjFjMi43LDEwLjMsNy45LDE5LjQsMTUuMSwyNi41bDkuOSw5LjhsOS45LTkuOGM3LjItNywxMi40LTE2LjIsMTUuMS0yNi41bDUuOC0yMS44DQoJCQljLTAuNy0xMC0xLjEtMjAtMS4xLTI5LjljMC0xOC41LTEzLjMtMzMuNC0yOS43LTMzLjRTMTQxLDUyLjksMTQxLDcxLjRjMCwxMC0wLjQsMjAtMS4xLDI5LjlMMTQ1LjcsMTIzLjF6Ii8+DQoJPC9nPg0KPC9nPg0KPC9zdmc+DQo="
+            />
+            <h4 class="u-product-control u-text u-text-14">
+              <a class="u-product-title-link" href="#"></a>
+            </h4>
+
+            <div class="u-product-control u-product-desc u-text u-text-15">
+              <p>
+                Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit nullam nunc justo sagittis suscipit ultrices.
+              </p>
+            </div>
+
+            <div
+              class="u-container-style u-custom-color-4 u-expanded-width u-group u-group-5"
+            >
+              <div class="u-container-layout u-container-layout-10">
+                <p class="u-text u-text-default u-text-16">
+                  Sample text. Click to select the Text Element.
+                </p>
+              </div>
+            </div>
+
+            <div class="u-product-control u-product-price u-product-price-5">
+              <div class="u-price-wrapper u-spacing-10">
+                <div class="u-hide-price u-old-price"></div>
+
+                <div
+                  class="u-price u-text-palette-1-base"
+                  style="font-size: 1.5rem; font-weight: 700"
+                ></div>
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="u-btn u-btn-rectangle u-button-style u-product-control u-btn-5"
+            ></a>
+          </div>
+        </div>
+
+        <div
+          class="u-align-left u-container-style u-products-item u-repeater-item u-white u-repeater-item-6"
+        >
+          <div
+            class="u-container-layout u-similar-container u-valign-top u-container-layout-11"
+          >
+            <img
+              alt=""
+              class="u-expanded-width u-image u-image-default u-product-control u-image-6"
+              src="data:image/svg+xml;base64,DQoNCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0ibWFuIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjI1NnB4IiBoZWlnaHQ9IjI1NnB4IiB2aWV3Qm94PSIwIDAgMjU2IDI1NiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjU2IDI1NiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cmVjdCBmaWxsPSIjQzZEOEUxIiB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIvPg0KPGc+DQoJPHBhdGggZmlsbD0iIzdGOTZBNiIgZD0iTTIwNy45LDE5NS40TDE4Miw5Ni41Yy0wLjUtMS44LTEuNS00LjUtMi40LTYuMWwtNy40LTE0LjJjLTEtMS44LTMuNC0zLjQtNS41LTMuNEg4OS41DQoJCWMtMi4xLDAtNC42LDEuNC01LjUsMy40bC03LjYsMTQuNmMtMC44LDEuNi0xLjksNC4zLTIuNCw2LjFsLTI1LjksOTguNWMtMC4zLDEuMS0wLjEsMi4yLDAuNiwzYzAuNywwLjgsMS43LDEuMywyLjgsMS4zaDUuOA0KCQljMS42LDAsNC4xLDAuNiw1LjUsMS40bDExLjIsNi4yYzAuOSwwLjUsMiwwLjcsMy4zLDAuN3MyLjQtMC4yLDMuMy0wLjdsMTEuMi02LjJjMC42LTAuMywxLjUtMC41LDIuNC0wLjVjMC45LDAsMS43LDAuMiwyLjQsMC41DQoJCWwxMS4yLDYuMmMwLjksMC41LDIsMC43LDMuMywwLjdzMi40LTAuMiwzLjMtMC43bDExLjItNi4yYzAuNi0wLjMsMS41LTAuNSwyLjQtMC41YzAuOSwwLDEuNywwLjIsMi40LDAuNWwxMS4yLDYuMg0KCQljMC45LDAuNSwyLDAuNywzLjMsMC43YzEuMiwwLDIuNC0wLjIsMy4zLTAuN2wxMS4yLTYuMmMwLjYtMC4zLDEuNS0wLjUsMi40LTAuNXMxLjcsMC4yLDIuNCwwLjVsMTEuMiw2LjJjMC45LDAuNSwyLDAuNywzLjMsMC43DQoJCWMxLjIsMCwyLjQtMC4yLDMuMy0wLjdsMTEuMi02LjJjMS40LTAuOCwzLjktMS40LDUuNS0xLjRoNS44YzEuMSwwLDIuMi0wLjUsMi44LTEuM0MyMDgsMTk3LjUsMjA4LjEsMTk2LjQsMjA3LjksMTk1LjR6Ii8+DQoJPHBhdGggZmlsbD0iIzdGOTZBNiIgZD0iTTg4LjksNjYuN2g3OC4zYzEuNiwwLDMtMS40LDMtM1Y1MWMwLTEuNi0xLjQtMy0zLTNIODguOWMtMS42LDAtMywxLjQtMywzdjEyLjgNCgkJQzg1LjksNjUuNCw4Ny4zLDY2LjcsODguOSw2Ni43eiBNMTE4LjgsNTMuOGMwLTEuMywxLjEtMi40LDIuNC0yLjRoMTMuN2MxLjMsMCwyLjQsMSwyLjQsMi40djcuMWMwLDEuMy0xLjEsMi40LTIuNCwyLjRoLTEzLjcNCgkJYy0xLjMsMC0yLjQtMS0yLjQtMi40VjUzLjh6Ii8+DQoJPHJlY3QgeD0iMTIyLjgiIHk9IjU1LjQiIGZpbGw9IiM3Rjk2QTYiIHdpZHRoPSIxMC40IiBoZWlnaHQ9IjMuOSIvPg0KPC9nPg0KPC9zdmc+DQo="
+            />
+            <h4 class="u-product-control u-text u-text-17">
+              <a class="u-product-title-link" href="#"></a>
+            </h4>
+
+            <div class="u-product-control u-product-desc u-text u-text-18">
+              <p>
+                Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit nullam nunc justo sagittis suscipit ultrices.
+              </p>
+            </div>
+
+            <div
+              class="u-container-style u-custom-color-4 u-expanded-width u-group u-group-6"
+            >
+              <div class="u-container-layout u-container-layout-12">
+                <p class="u-text u-text-default u-text-19">
+                  Sample text. Click to select the Text Element.
+                </p>
+              </div>
+            </div>
+
+            <div class="u-product-control u-product-price u-product-price-6">
+              <div class="u-price-wrapper u-spacing-10">
+                <div class="u-hide-price u-old-price"></div>
+
+                <div
+                  class="u-price u-text-palette-1-base"
+                  style="font-size: 1.5rem; font-weight: 700"
+                ></div>
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="u-btn u-btn-rectangle u-button-style u-product-control u-btn-6"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <a
+        class="u-absolute-vcenter u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1"
+        href="#"
+        role="button"
+      >
+        <span aria-hidden="true">
+          <svg viewBox="0 0 451.847 451.847">
+            <path
+              d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+            ></path>
+          </svg>
+        </span>
+        <span class="sr-only">
+          <svg viewBox="0 0 451.847 451.847">
+            <path
+              d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+            ></path>
+          </svg>
+        </span>
+      </a>
+      <a
+        class="u-absolute-vcenter u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-2"
+        href="#"
+        role="button"
+      >
+        <span aria-hidden="true">
+          <svg viewBox="0 0 451.846 451.847">
+            <path
+              d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+            ></path>
+          </svg>
+        </span>
+        <span class="sr-only">
+          <svg viewBox="0 0 451.846 451.847">
+            <path
+              d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+            ></path>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+{% endblock %}
